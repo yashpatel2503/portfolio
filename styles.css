@@ -50,6 +50,7 @@ nav ul li a {
 
 .project img {
     max-width: 100%;
+    height: auto;
 }
 
 .project h3 {
@@ -89,8 +90,12 @@ footer {
 .social-icons a:hover {
     color: #ccc;
 }
-.profile-image {
-    max-width: 100%; /* Adjust this value as needed */
-    height: auto;
-}
 
+/* Adjust the size of the profile image */
+.profile-image {
+    max-width: 200px; /* Adjust this value as needed */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
