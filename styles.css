@@ -13,10 +13,7 @@ header {
     background: #333;
     color: #fff;
     padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999;
+    text-align: center;
 }
 
 header h1 {
@@ -91,11 +88,12 @@ footer {
     color: #ccc;
 }
 
-/* Adjust the size of the profile image */
 .profile-image {
-    max-width: 200px; /* Adjust this value as needed */
+    max-width: 100px; /* Adjust this value as needed */
     width: 100%;
     height: auto;
+    border-radius: 50%; /* Make the image round */
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the image horizontally */
+    margin-bottom: 10px; /* Add some space below the image */
 }
