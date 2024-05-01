@@ -23,6 +23,9 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li {
@@ -35,129 +38,64 @@ nav ul li a {
     text-decoration: none;
 }
 
-.about {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 60px 0;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about-content img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.about-content p {
-    max-width: 60%;
-}
-
-.project {
-    margin-bottom: 30px;
-}
-
-.project img {
-    max-width: 100%;
-}
-
-.project h3 {
-    margin-top: 10px;
-}
-
-.skills {
-    background-color: #e6e6e6;
-    color: #333;
-    padding: 60px 0;
-}
-
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills li {
-    margin-bottom: 10px;
-}
-
-.experience {
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 60px 0;
-}
-
-.contact {
-    background-color: #eaeaea;
-    color: #333;
-    padding: 60px 0;
-}
-
-.contact input[type="text"],
-.contact input[type="email"],
-.contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-}
-
-.contact textarea {
-    height: 100px;
-}
-
-.btn {
-    display: inline-block;
-    background: #333;
+.social-icon {
     color: #fff;
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    margin-right: 20px;
+    font-size: 24px;
 }
 
-.btn:hover {
-    background: #555;
+.section {
+    padding: 60px 0;
+    background-color: #f0f0f0;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+.container h2 {
+    font-size: 24px;
     text-align: center;
 }
 
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+.container p {
+    text-align: center;
 }
 
-.social-icons a:hover {
-    color: #ccc;
+.profile-image {
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.about-content {
+    text-align: right;
+}
+
+.about-content h2 {
+    font-size: 28px;
 }
 
 @media (max-width: 768px) {
     .about-content {
-        flex-direction: column;
-        align-items: flex-start;
         text-align: center;
     }
 
     .about-content img {
         margin-top: 20px;
+        position: static;
     }
 
     nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     nav ul li {
-        margin: 0 10px;
+        margin: 10px 0;
+    }
+
+    .social-icon {
+        margin: 0;
+        margin-top: 10px;
     }
 }
