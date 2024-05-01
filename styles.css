@@ -13,14 +13,13 @@ header {
     background: #333;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
-}
-
-header .profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -37,35 +36,27 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-}
-
-.section {
-    padding: 60px 0;
+    font-size: 18px;
 }
 
 .about {
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
+    padding: 60px 0;
 }
 
-.projects {
-    background-color: #e6f7ff;
-    color: #333;
+.about-content {
+    max-width: 50%;
+    margin: 0 auto;
 }
 
-.skills {
-    background-color: #f0f0f0;
-    color: #333;
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-.experience {
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-.contact {
-    background-color: #e6e6e6;
-    color: #333;
+.about p {
+    font-size: 16px;
 }
 
 .project {
@@ -74,11 +65,50 @@ nav ul li a {
 
 .project img {
     max-width: 100%;
-    height: auto;
 }
 
 .project h3 {
     margin-top: 10px;
+}
+
+.skills {
+    background-color: #e6e6e6;
+    color: #333;
+    padding: 60px 0;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+.experience {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 60px 0;
+}
+
+.contact {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 60px 0;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact textarea {
+    height: 100px;
 }
 
 .btn {
@@ -110,4 +140,35 @@ footer {
 
 .social-icons a:hover {
     color: #ccc;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        max-width: 80%;
+    }
+
+    .profile-image {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
 }
